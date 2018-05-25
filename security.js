@@ -1,4 +1,4 @@
-ar exports = module.exports = {};
+var exports = module.exports = {};
 
 exports.mysql = require('mysql');
 
