@@ -17,6 +17,8 @@ var requests = require('./routes/request');
 var app = express();
 
 //view engine setup
+app.engine('pug', require('pug').__express)
+
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
