@@ -1,0 +1,11 @@
+div.fixed-top {
+    background-color: wheat
+}
+
+button.btn {
+    background-color: rosybrown;
+}
+
+button.btn:hover {
+    background-color: burlywood;
+}

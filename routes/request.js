@@ -3,6 +3,7 @@ var router = express.Router();
 var passcrypt = require('password-hash-and-salt');
 var general = require('../security');
 
+/*
 router.post('/login', function(req, res) {
     var username = req.body.username;
     username = username.toLowerCase();
@@ -82,6 +83,6 @@ router.post('/login', function(req, res) {
       var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
       return v.toString(16);
     });
-  };
+  };*/
   
   module.exports = router;

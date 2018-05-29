@@ -9,7 +9,7 @@ exports.pool = require('mysql').createPool({
   password: "",
   database: ""
 });
-
+/*
 exports.Log = function(user, message, type) {
   var dateTime = exports.DateToSql(new Date());
   exports.pool.query("INSERT INTO `systemlogs` (`id`, `time`, `type`, `user`, `message`) VALUES (NULL, '" + dateTime + "','" + type + "','" + user + "','" + message + "');");
@@ -31,7 +31,7 @@ exports.ApplicationLog = function(id, user, message) {//Separate entries by %%, 
     }
   });
 }
-
+*/
 exports.AddMins = function(time, add) {    
    time.setTime(time.getTime() + (add*60*1000)); 
    return time;
@@ -52,6 +52,7 @@ exports.DateToSql = function(date) {
 //reqredirect is if the client needs to be redirected if the check fails.
 //render is the function to run if the check succeeds
 //redirectname is the name of where to send the user once they log back in
+/*
 exports.TokenCheck = function(combotoken, res, reqredirect, render, redirectname, LoginRender) {
   var tokensplit = combotoken.split("@");
   var user = tokensplit[0];
@@ -254,3 +255,4 @@ exports.ApplicantPostTokenCheck = function(req, res, requestname, requesttype, c
     return false;
   }
 };
+*/
