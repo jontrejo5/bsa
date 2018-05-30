@@ -1,11 +1,23 @@
-div.fixed-top {
-    background-color: wheat
+body{
+    background-color: skyblue;
 }
 
 button.btn {
     background-color: rosybrown;
+    margin-right: 70%;
+    margin-left: 70%;
+    width: 10%; 
 }
 
 button.btn:hover {
     background-color: burlywood;
+}
+
+
+#img-wrapper {
+    width:50%; 
+    height:30%; 
+    margin-left: auto; 
+    margin-right: auto;
+    position: relative;
 }
