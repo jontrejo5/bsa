@@ -1,23 +1,23 @@
-body{
-    background-color: skyblue;
+body {
+    background-color: darkseagreen;
+}
+  
+.site-header {
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+
+.site-header a {
+    color: whitesmoke;
+    transition: ease-in-out color .15s;
 }
 
-button.btn {
-    background-color: rosybrown;
-    margin-right: 70%;
-    margin-left: 70%;
-    width: 10%; 
-}
-
-button.btn:hover {
-    background-color: burlywood;
-}
+.site-header a:hover {
+    color: red;
+    text-decoration: none;
+  }
 
 
-#img-wrapper {
-    width:50%; 
-    height:30%; 
-    margin-left: auto; 
-    margin-right: auto;
-    position: relative;
-}
+.overflow-hidden { overflow: hidden; }
+  

@@ -10,12 +10,13 @@ html(lang='en')
 
     title= title
   body
-    #main.container-fluid
-      #topbar.row
-        #imgwrapper.img(src='../../images/cover-crop.jpg', alt='Rin Cover', style='width:50%; height:30%; margin-left: auto; margin-right: auto;')
-        button.btn(type='button') Home
-        button.btn(type='button') Games
-        button.btn(type='button') Catalog
-        button.btn(type='button') Contact
-      .row
-        block content
+    nav.site-header.sticky-top.py-1
+      .container.d-flex.flex-column.flex-md-row.justify-content-center
+        a.py-2.bd-highlight(href='#') Home
+        a.py-2.d-none.d-md-inline-block(href='#') Games
+        a.py-2.d-none.d-md-inline-block(href='#') Catalog
+        a.py-2.d-none.d-md-inline-block(href='#') About
+    .row
+      img.img-responsive(src='../../images/cover-crop-small.jpg', alt='Responsive Image')
+    .container-fluid
+    block content
