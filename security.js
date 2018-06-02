@@ -6,7 +6,7 @@ exports.pool = require('mysql').createPool({
   connectionLimit: 10,
   host: "localhost",
   user: "root",
-  password: "",
+  password: "dGdXV8BcfApA5G9U",
   database: ""
 });
 /*
